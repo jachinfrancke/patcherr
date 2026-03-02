@@ -33,11 +33,11 @@ jobs:
             -   name: Install dependencies
                 run: composer install --prefer-dist --no-progress
 
-            -   name: Create project ZIP
-                run: zip -r project.zip . -x ".git/*" -x "vendor/*"
+            -   name: Create patcherr ZIP
+                run: zip -r patcherr.zip . -x ".git/*" -x "vendor/*"
 
             -   name: Upload artifact with version
                 uses: actions/upload-artifact@v4
                 with:
                     name: patcherr
-                    path: project.zip
+                    path: patcherr.zip
