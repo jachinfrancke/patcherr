@@ -35,7 +35,8 @@ jobs:
 
             -   name: Create patcherr ZIP
                 run: |
-                    zip -r patcherr.zip * -x ".git/*"
+                    cd patcherr
+                    zip -r ../patcherr.zip * -x ".git/*"
 
             -   name: Upload artifact with version
                 uses: actions/upload-artifact@v4
