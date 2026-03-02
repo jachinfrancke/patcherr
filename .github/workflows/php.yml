@@ -34,9 +34,7 @@ jobs:
                 run: composer install --prefer-dist --no-progress
 
             -   name: Create patcherr ZIP
-                run: |
-                    cd patcherr
-                    zip -r ../patcherr.zip * -x ".git/*"
+                run: zip -r patcherr.zip * -x ".git/*"
 
             -   name: Upload artifact with version
                 uses: actions/upload-artifact@v4

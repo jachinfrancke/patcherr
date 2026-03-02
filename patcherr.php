@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Patcherr
- * Version: 0.0.5
+ * Version: 0.0.6
  */
 defined('ABSPATH') || exit;
 
@@ -19,5 +19,5 @@ $updateChecker->getVcsApi()->enableReleaseAssets();
 
 
 add_action('admin_notices', function () {
-    echo '<div class="notice notice-success is-dismissible"><p>Patcherr is loaded and ready to patch your site!!! (0.0.5)</p></div>';
+    echo '<div class="notice notice-success is-dismissible"><p>Patcherr is loaded and ready to patch your site!!! (0.0.6)</p></div>';
 });
