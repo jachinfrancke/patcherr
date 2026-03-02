@@ -10,7 +10,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
 $updateChecker = PucFactory::buildUpdateChecker(
-    'https://github.com/jachinfrancke/patcherr/',
+    'https://github.com/jachinfrancke/patcherr',
     __FILE__,
     'patcherr'
 );
