@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Patcherr
- * Version: 0.0.1
+ * Version: 0.0.2
  */
 defined('ABSPATH') || exit;
 
@@ -19,5 +19,5 @@ $updateChecker = PucFactory::buildUpdateChecker(
 $updateChecker->setBranch('main');
 
 add_action('admin_notices', function () {
-    echo '<div class="notice notice-success is-dismissible"><p>Patcherr is loaded and ready to patch your site!</p></div>';
+    echo '<div class="notice notice-success is-dismissible"><p>Patcherr is loaded and ready to patch your site!!! v2.😉</p></div>';
 });
