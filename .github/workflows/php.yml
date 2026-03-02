@@ -33,8 +33,10 @@ jobs:
             -   name: Install dependencies
                 run: composer install --prefer-dist --no-progress
 
-            -   name: Create patcherr ZIP
-                run: zip -r patcherr.zip . -x ".git/*"
+            - name: Create patcherr ZIP
+              run: |
+                  cd patcherr || exit 1
+                  zip -r ../patcherr.zip . -x ".git/*"
 
             -   name: Upload artifact with version
                 uses: actions/upload-artifact@v4
