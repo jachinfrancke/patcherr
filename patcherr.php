@@ -15,9 +15,9 @@ $updateChecker = PucFactory::buildUpdateChecker(
     'patcherr'
 );
 
-//Set the branch that contains the stable release.
-$updateChecker->setBranch('main');
+$updateChecker->getVcsApi()->enableReleaseAssets();
+
 
 add_action('admin_notices', function () {
-    echo '<div class="notice notice-success is-dismissible"><p>Patcherr is loaded and ready to patch your site!!! v2.😉</p></div>';
+    echo '<div class="notice notice-success is-dismissible"><p>Patcherr is loaded and ready to patch your site!!! v2.😉!!!</p></div>';
 });
