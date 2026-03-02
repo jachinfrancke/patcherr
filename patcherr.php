@@ -1,6 +1,7 @@
 <?php
 /**
  * Plugin Name: Patcherr
+ * Version: 0.0.1
  */
 defined('ABSPATH') || exit;
 
@@ -14,7 +15,8 @@ $updateChecker = PucFactory::buildUpdateChecker(
     'patcherr'
 );
 
-$updateChecker->getVcsApi()->enableReleaseAssets();
+//Set the branch that contains the stable release.
+$updateChecker->setBranch('main');
 
 add_action('admin_notices', function () {
     echo '<div class="notice notice-success is-dismissible"><p>Patcherr is loaded and ready to patch your site!</p></div>';
