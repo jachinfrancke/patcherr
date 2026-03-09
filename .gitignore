@@ -1,4 +1,4 @@
 /vendor/
 
 # Temporarily add vendor (fix later in ci)
-!/vendor/
+!/vendor
