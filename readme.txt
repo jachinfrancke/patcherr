@@ -1,4 +1,4 @@
-=== Toolbox ===
+=== TW Toolbox ===
 Tags: tools, admin, utilities
 Requires at least: 6.9
 Tested up to: 6.9
