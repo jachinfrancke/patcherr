@@ -1,9 +1,0 @@
-{
-    "name": "jachinfrancke/patcherr",
-    "description": "Patch plugin for WordPress sites",
-    "license": "MIT",
-    "type": "wordpress-plugin",
-    "require": {
-        "yahnis-elsts/plugin-update-checker": "^5.0"
-    }
-}
