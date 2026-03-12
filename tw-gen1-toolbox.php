@@ -11,5 +11,4 @@
 
 defined('ABSPATH') || exit;
 
-require_once plugin_dir_path(__FILE__) . 'actions/admin_notice.php';
 require_once plugin_dir_path(__FILE__) . 'actions/unload_separate_core_block_assets.php';
