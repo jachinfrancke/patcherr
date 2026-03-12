@@ -14,7 +14,7 @@ function toolbox_admin_notice()
     if (current_user_can('activate_plugins')) {
         echo sprintf(
             '<div class="notice notice-success is-dismissible"><p>%s</p></div>',
-            esc_html__('WP Gen1 Toolbox is activated...', 'wp-gen1-toolbox')
+            esc_html__('TW Toolbox is activated...', 'tw-toolbox')
         );
     }
 }
